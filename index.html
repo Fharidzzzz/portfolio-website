@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fharidz Tech Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: #fff;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        padding: 15px 0;
+        background: #243967;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: #ccc;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #3b82f6;
+      }
+
+      section {
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+      }
+
+      .profile-image {
+        width: 180px;
+        border-radius: 50%;
+        border: 4px solid #3b82f6;
+      }
+
+      .animated-heading {
+        margin-top: 20px;
+        font-size: 2rem;
+        background: linear-gradient(90deg, #3b82f6, #9333ea);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .typing-text {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #cbd5e1;
+      }
+
+      .btn-primary {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #3b82f6;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .btn-primary:hover {
+        background: #2563eb;
+      }
+
+      .about-content {
+        max-width: 700px;
+        margin: 20px auto;
+        line-height: 1.6;
+        color: #cbd5e1;
+      }
+
+      .about-item {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin: 10px 0;
+      }
+
+      .social-icons a {
+        color: #ccc;
+        font-size: 24px;
+        margin: 0 10px;
+      }
+
+      .social-icons a:hover {
+        color: #3b82f6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#community">Community</a>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <img src="pictures/Gambar WhatsApp 2024-12-09 pukul 13.56.14_69b1bfb6.jpg" alt="Profile Image" class="profile-image" />
+
+      <h1 class="animated-heading">Hi, I'm Fharidz</h1>
+
+      <h3 class="typing-text">I'm a <span></span></h3>
+
+      <p style="margin-top:10px;">
+        Computer Science Student | Full-Stack Developer | Cybersecurity Enthusiast
+      </p>
+
+      <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        View My Work
+      </button>
+
+      <div class="about-content">
+        <p>
+          I am passionate about building secure, scalable, and impactful digital solutions.
+          My focus lies in web development and cybersecurity, where I continuously explore
+          modern technologies to solve real-world problems.
+        </p>
+        <p>
+          Beyond coding, I enjoy sharing knowledge, collaborating with peers,
+          and contributing to tech communities. I believe technology should empower
+          people and create opportunities.
+        </p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/muhamad-fharidz-a2a0083b3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/fharidzzzz"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+
+    <section id="services" class="about-item">
+      <h3>Services</h3>
+      <ul>
+        <li>🌐 Web Development (Frontend & Backend)</li>
+        <li>🔐 Basic Web Security Implementation</li>
+        <li>⚙️ System Optimization & Troubleshooting</li>
+        <li>📊 Technical Documentation & Support</li>
+        <li>🎤 Tech Sharing & Workshop Facilitation</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="about-item">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+        <li>Database: MySQL</li>
+        <li>Basic Cybersecurity Concepts</li>
+      </ul>
+    </section>
+
+   <section id="education" class="about-item">
+  <h3>Education</h3>
+  <ul>
+    <li><strong>Bachelor of Computer Science</strong> – Wastukancana College of Technology</li>
+    <li>Focus: Software Development & Systems Engineering</li>
+    <li>Key Courses: Data Structures, Algorithms, Database Systems, Advanced Web Programming</li>
+  </ul>
+</section>
+
+    <section id="experience" class="about-item">
+      <h3>Experience</h3>
+      <ul>
+        <li>Developed personal portfolio website showcasing projects and services</li>
+        <li>Built web applications with authentication and database integration</li>
+        <li>Participated in collaborative coding projects</li>
+      </ul>
+    </section>
+
+    <section id="leadership" class="about-item">
+  <h3>Community & Leadership</h3>
+  <ul>
+    <li>
+      <strong>Workshop Speaker – Goes To School Technology Workshop</strong><br />
+      Contributed to empowering young generations in the evolving technology era.
+      Delivered an opening presentation on website development fundamentals,
+      covering HTML, PHP, and their practical differences.
+      Facilitated an engaging Q&A session and provided clear technical explanations
+      to participants.
+    </li>
+  </ul>
+</section>
+    <script>
+      const typingText = document.querySelector(".typing-text span");
+      const phrases = [
+        "Full-Stack Developer",
+        "Cybersecurity Enthusiast",
+        "Tech Community Builder",
+        "Future Google Ecosystem Contributor"
+      ];
+
+      let phraseIndex = 0;
+      let letterIndex = 0;
+      let typingSpeed = 100;
+
+      function typePhrase() {
+        if (letterIndex < phrases[phraseIndex].length) {
+          typingText.textContent += phrases[phraseIndex].charAt(letterIndex);
+          letterIndex++;
+          setTimeout(typePhrase, typingSpeed);
+        } else {
+          setTimeout(deletePhrase, 1500);
+        }
+      }
+
+      function deletePhrase() {
+        if (letterIndex > 0) {
+          typingText.textContent = phrases[phraseIndex].substring(0, letterIndex - 1);
+          letterIndex--;
+          setTimeout(deletePhrase, typingSpeed);
+        } else {
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(typePhrase, typingSpeed);
+        }
+      }
+
+      typePhrase();
+    </script>
+  </body>
+</html>

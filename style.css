@@ -1,0 +1,163 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    header 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111827;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: #cbd5e1;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+/* ================= SECTION ================= */
+
+section {
+    padding: 120px 20px 80px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #3b82f6;
+}
+
+/* ================= HOME ================= */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid #3b82f6;
+    margin-bottom: 20px;
+}
+
+.animated-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.typing-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #cbd5e1;
+}
+
+.home p {
+    max-width: 700px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #3b82f6;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* ================= LIST ================= */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* ================= SOCIAL ================= */
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #94a3b8;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3b82f6;
+    transform: scale(1.2);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .animated-heading {
+        font-size: 1.5rem;
+    }
+
+    .profile-image {
+        width: 140px;
+    }
+}
+body {
+    padding-top: 80px;
+}
+header {
+    backdrop-filter: blur(10px);
+    background: rgba(17, 24, 39, 0.8);
+}
